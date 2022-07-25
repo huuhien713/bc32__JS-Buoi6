@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BTN_16</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container my-5">
+        <!-- BÀI TẬP 1 -->
+        <div class="w-50 p-3">
+            <h3 class="my-3">Bài tập 1:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Tìm số nguyên dương nhỏ nhất sao cho: 
+                        1 + 2 + … + n > Số nhập vào
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <label>Nhập số cần tính:</label><input id="soSoSanh" class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnTinh" class="btn btn-info mb-3">Số cần tìm</button>
+                    <div class="alert alert-info">
+                        <span id="tagTinh"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 2 -->
+        <div class="w-50 p-3">
+            <h3 class="my-3">Bài tập 2:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Viết chương trình nhập vào 2 số x, n tính tổng: 
+                        S(n) = x + x^2 + x^3 + … + x^n 
+                        (Sử dụng vòng lặp và hàm)
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <label>Nhập số X:</label><input id="soX" class="form-control" type="number">
+                    </div>
+                    <div class="row">
+                        <label>Nhập số n:</label><input id="soN" class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnTong" class="btn btn-info mb-3">Tính Tổng</button>
+                    <div class="alert alert-info">
+                        <span id="tagTong"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 3 -->
+        <div class="w-50 p-3">
+            <h3 class="my-3">Bài tập 3:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập vào 1 số (n). Tính giai thừa 1*2*...n</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <label>Nhập số cần tính giai thừa:</label><input id="soTinhGiaiThua" class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnTinhGiaiThua" class="btn btn-info mb-3">Tính Giai Thừa</button>
+                    <div class="alert alert-info">
+                        <span id="tinhGiaiThua"></span>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- BÀI TẬP 4 -->
+        <div class="w-100 p-3">
+            <h3 class="my-3">Bài tập 4:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div.
+                    Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh.
+                    </h3>
+                </div>
+                <div class="card-body">
+                </div>
+                <div class="card-footer text-center ">
+                    <button id="btnTaoTheDiv" class="btn btn-info mb-3">Tạo Thẻ Div</button>
+                    <div class="alert alert-info ">
+                        <p id="tagTaoTheDiv" class="text-white text-left"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 5 -->
+        <div class="w-50 p-3">
+            <h3 class="my-3">Bài tập 5:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập vào số Nguyên, xét số nguyên đó có phải SNT không.
+                        In ra tất cả các SNT nhỏ hơn số nguyên đó</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <label>Nhập số cần tính:</label><input id="soNguyenTo" class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnSoNguyenTo" class="btn btn-info mb-3">Xét Số Nguyên Tố</button>
+                    <div class="alert alert-info">
+                        <span id="tagSoNguyenTo"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
